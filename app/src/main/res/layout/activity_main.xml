@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="start"
+    android:background="@color/background"
+    android:paddingHorizontal="@dimen/regular1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/title2">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/img"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Trường đại học tài chính ngân hàng"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="@dimen/regular1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Quản lí thu học phí"
+                android:fontFamily="@font/roboto"
+                android:textSize="@dimen/regular1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
+        <Button
+            android:id="@+id/main_watchTuitionReport"
+            android:layout_marginTop="@dimen/regular2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xem báo cáo tình hình học phí"
+            android:textSize="@dimen/regular1"
+            android:paddingVertical="@dimen/regular1"
+            android:fontFamily="@font/roboto_bold"/>
+
+        <Button
+            android:id="@+id/main_logOut"
+            android:layout_marginTop="@dimen/regular2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng xuất"
+            android:textSize="@dimen/regular1"
+            android:paddingVertical="@dimen/regular1"
+            android:fontFamily="@font/roboto_bold"/>
+    </LinearLayout>
+
+</LinearLayout>
